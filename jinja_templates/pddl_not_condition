@@ -1,0 +1,4 @@
+{% filter indent(width=0) %}(not
+{%- filter indent(width=2) %}
+{{condition}} {% endfilter %}
+){%endfilter -%}

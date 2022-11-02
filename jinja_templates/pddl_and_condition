@@ -1,0 +1,5 @@
+{% filter indent(width=0) %}(and
+{%- filter indent(width=2) %}
+{{left_condition}}
+{{right_condition}} {% endfilter %}
+){%endfilter -%}

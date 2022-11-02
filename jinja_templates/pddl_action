@@ -1,0 +1,23 @@
+;;{{pddl_comment}}
+(:action {{pddl_action_name}}
+{%- filter indent(width=2) %}
+{% if pddl_action_parameters|length -%}
+:parameters {{pddl_action_parameters}}
+{% endif -%}
+{% if pddl_action_preconditions|length -%}
+:precondition {% filter indent(width=14) -%}
+{{pddl_action_preconditions}}
+{% endfilter -%}
+{% endif -%}
+{% if pddl_action_effects|length -%}
+:effect {% filter indent(width=14) -%}
+{{pddl_action_effects}}
+{% endfilter -%}
+{% endif -%}
+{% if pddl_action_observe|length -%}
+:observe {% filter indent(width=14) -%}
+{{pddl_action_observe}}
+{% endfilter -%}
+{% endif -%}
+{% endfilter -%}
+)

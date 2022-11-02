@@ -1,0 +1,18 @@
+(define (domain {{pddl_domain_name}})
+
+(:requirements :strips :typing)
+
+(:types
+{%- filter indent(width=2) %}
+{{pddl_domain_types}}
+{% endfilter -%}
+)
+
+(:predicates
+{%- filter indent(width=2) %}
+{{pddl_domain_predicates}}
+{% endfilter -%}
+)
+
+{{pddl_domain_actions}}
+)

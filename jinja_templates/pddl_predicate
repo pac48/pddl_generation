@@ -1,0 +1,2 @@
+{% if predicate_parameters|length %}({{predicate_name}} {{predicate_parameters}}){% endif -%}
+{% if not predicate_parameters|length %}({{predicate_name}}){% endif -%}

@@ -1,0 +1,5 @@
+{% filter indent(width=0) %}(forall
+{%- filter indent(width=2) %}
+({{universal_parameter}})
+{{condition}} {% endfilter %}
+){%endfilter -%}
