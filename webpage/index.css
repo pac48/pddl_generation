@@ -1,0 +1,70 @@
+
+.draggable-basic {
+    display: table;
+    background-color: #29e;
+    width: 150px;
+    color: white;
+    border-radius: 1.0em;
+    padding: 0.5em;
+    touch-action: none;
+    user-select: none;
+    position: absolute;
+    top: 100px;
+}
+
+.draggable-basic-title p {
+    display: flex;
+    width: 150px;
+    background: gray;
+    color: white;
+    padding-left: 1.0em;
+    padding-right: 1.0em;
+    cursor: initial;
+}
+
+.draggable-note {
+    display: table;
+    background-color: red;
+    color: white;
+    width: 150px;
+    border-radius: 1.0em;
+    padding: 0.5em;
+    touch-action: none;
+    user-select: none;
+    position: absolute;
+}
+
+.box-select {
+    display: table;
+    background-color: rgba(180, 180, 255, 0.6);
+    width: 0px;
+    height: 0px;
+    position: absolute;
+}
+
+#main-group {
+    width: 1000px;
+    height: 600px;
+    /*display: flex;*/
+}
+
+
+.row {
+    display: table-row;
+}
+
+.btn-group-vertical {
+    display: flex;
+}
+
+.btn-secondary {
+    background: gray;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
